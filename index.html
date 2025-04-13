@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array Object Example</title>
+    <script>
+        function arrayDemo() {
+            let fruits = ["Apple", "Banana", "Mango"];
+            let output = "";
+
+            output += "Original Array: " + fruits + "<br>";
+            output += "Length: " + fruits.length + "<br>";
+
+            fruits.push("Orange"); // add element
+            output += "After push: " + fruits + "<br>";
+
+            fruits.pop(); // remove last element
+            output += "After pop: " + fruits + "<br>";
+
+            fruits.sort(); // sort array
+            output += "Sorted Array: " + fruits + "<br>";
+
+            document.getElementById("arrayOutput").innerHTML = output;
+        }
+    </script>
+</head>
+<body onload="arrayDemo()">
+
+    <h2>Array Object Properties and Methods</h2>
+    <div id="arrayOutput"></div>
+
+</body>
+</html>
